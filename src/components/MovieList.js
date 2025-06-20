@@ -8,7 +8,7 @@ const handleDelete = async (id) => {
      return;
    }
     try {
-      await API.delete(`https://movie-watchlist-server-1.onrender.com/api/movies/${id}`, {
+      await API.delete(`https://movie-watchlist-server-09u5.onrender.com/api/movies/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       toast.success('Movie deleted');

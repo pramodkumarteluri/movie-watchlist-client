@@ -17,7 +17,7 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post("https://movie-watchlist-server-1.onrender.com/auth/register", {
+      const res = await axios.post("https://movie-watchlist-server-09u5.onrender.com/auth/register", {
         username,
         email,
         password,

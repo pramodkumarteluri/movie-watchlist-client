@@ -8,7 +8,7 @@ const EditMovie = ({ movie, onClose, onUpdate }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.put(`https://movie-watchlist-server-1.onrender.com/api/movies/${movie._id}`,{ title },
+      await API.put(`https://movie-watchlist-server-09u5.onrender.com/api/movies/${movie._id}`,{ title },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         }

@@ -16,7 +16,7 @@ const Login = () => {
     }
 
     try {
-      const res = await fetch("https://movie-watchlist-server-1.onrender.com/auth/login", {
+      const res = await fetch("https://movie-watchlist-server-09u5.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

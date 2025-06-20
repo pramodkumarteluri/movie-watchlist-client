@@ -10,7 +10,7 @@ const MovieCard = ({ movie, onUpdate }) => {
     if (!window.confirm('Are you sure you want to delete this movie?')) return;
 
     try {
-      await API.delete(`https://movie-watchlist-server-1.onrender.com/api/movies/${movie._id}`, {
+      await API.delete(`https://movie-watchlist-server-09u5.onrender.com/api/movies/${movie._id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       toast.success("Movie deleted successfully");

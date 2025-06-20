@@ -16,7 +16,7 @@ const AddMovie = ({ onAdd }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.post('https://movie-watchlist-server-1.onrender.com/api/movies', form, {
+      await API.post('https://movie-watchlist-server-09u5.onrender.com/api/movies', form, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       toast.success('Movie added');

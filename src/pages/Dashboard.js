@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   const fetchMovies = async () => {
     try {
-      const { data } = await API.get('https://movie-watchlist-server-1.onrender.com/api/movies', {
+      const { data } = await API.get('https://movie-watchlist-server-09u5.onrender.com/api/movies', {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       setMovies(data);
